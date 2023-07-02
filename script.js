@@ -29,3 +29,19 @@
       boton.textContent = "🌛";
     }
   }
+  function smoothScroll(target) {
+    const element = document.querySelector(target);
+    window.scrollTo({
+      top: element.offsetTop,
+      behavior: 'smooth'
+    });
+  }
+  const scrollLinks = document.querySelectorAll('.scroll');
+
+scrollLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = link.getAttribute('data-target');
+    smoothScroll(target);
+  });
+});
