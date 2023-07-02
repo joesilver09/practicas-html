@@ -1,0 +1,197 @@
+/* section{ */
+/* break-inside: avoid;} */
+h1 {
+    line-height: 100%;
+  color: rgb(43, 42, 42);
+}
+body.dark-mode h1{color: whitesmoke;}
+
+h2 {
+    line-height: 1;
+  text-align: left;
+  color: #b10848cc;
+}
+.secret{display: none;
+text-align: center;
+transition: all 3s ease-in-out;
+}
+
+button{
+    background-color:#000000c0 ;
+    color: whitesmoke;
+font-size: 20px;
+border:2px solid #f334a385;
+}
+body.dark-mode button{
+  background-color:#f334a385 ;
+  color: rgb(245, 245, 245);
+font-size: 20px;
+border:2px solid #eb8787;
+}
+.contenedor{text-align: center;}
+.show {
+    opacity: 1;
+    display: block;
+}
+
+body {
+  height: 100%;
+  box-sizing: border-box;
+  line-height: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-rows: auto 1fr aut0;
+}
+body.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+  }
+video{margin-top: 10px;}
+header {
+  font-size: 20px;
+  padding: 20px 0px;
+  text-align: center;
+  width: 70%
+}
+header span {
+  background-color: #eb8787;
+  padding: 10px;
+  border-radius: 50% 50% 50% 50%;
+}
+main {
+    /* column-count: 2;
+    column-gap: 10px ; Espacio entre las columnas */
+    padding: 4px 25px;
+  text-align: justify;
+  width: 70%;
+  right:0
+}
+
+P {
+font-size: 16px;
+color: #616060;
+}
+body.dark-mode p {
+  color: whitesmoke; /* Cambiar el color del texto en el modo noche */
+}
+
+.footerGen {
+    width: 75%;
+  background-color: gray;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+body.dark-mode .footerGen{color:#000000}
+body.dark-mode h3{color:whitesmoke}
+h3{font-size: 25px;
+    line-height:30px;
+
+text-align: center;
+    color: black;
+border:4px solid grey
+}
+
+.barra {
+  position: fixed;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  background-color: #2b2a2a;
+  padding: 5px 10px;
+  text-align: center;
+  line-height: 1.2;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+}
+.barra_cerrada {
+  position: fixed;
+  right: 0;
+  width: 20%;
+  height: 40px;
+  padding: 5px 10px;
+  background-color: #2b2a2a;
+  text-align: center;
+  line-height: 1.2;
+}
+.barra ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.barra li {
+  margin-bottom: 4px;
+}
+
+.barra a {
+  font-size: 20px;
+  color: whitesmoke;
+  text-decoration: none;
+  font-style: oblique;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.modoNoche{
+  position:fixed;
+  top: 5px;;
+  left: 5px;
+}
+.titleNav {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #ff3280cc;
+  font-size: 23px;
+  font-style: oblique;
+}
+.barra .ini {
+  color: #929090;
+}
+
+footer {
+  padding: 10px;
+  width: 100%;
+}
+
+/* lo siguiente es para hacer que la barra se oculte
+se muestre y se agan grande los objetos seleccionables */
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.toggle-checkbox:checked ~ .barra {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out, visibility 0s linear;
+}
+
+.barra ul li a {
+  transition: font-size 0.3s ease-in-out;
+}
+
+.barra ul li a:hover {
+  font-size: 27px;
+}
+
+label {
+  transition: font-size 0.3s ease-in-out;
+}
+
+label:hover {
+  font-size: 27px;
+}
+.checkCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:40px;
+}
