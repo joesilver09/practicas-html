@@ -46,6 +46,7 @@ body {
   padding: 0 20px;
   display: grid;
   grid-template-rows: auto 1fr aut0;
+  transition: background-color 0.7s ease;
 }
 body.dark-mode {
   background-color: #000000;
@@ -194,4 +195,21 @@ label:hover {
   justify-content: center;
   align-items: center;
   height:40px;
+}
+
+#miVideo {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#miVideo.mostrar {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+#miVideo.ocultar {
+  opacity: 0;
+  visibility: hidden;
 }

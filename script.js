@@ -6,11 +6,16 @@
     var video = document.getElementById("miVideo");
     if (video.paused) {
       video.play();
+      setTimeout(function() {
+        video.classList.add("mostrar");
+      }, 10);
     } else {
-      video.pause();
+      video.classList.remove("mostrar");
+      setTimeout(function() {
+        video.pause();
+      }, 500);
     }
   }
-
   function toggleModoNoche() {
     var body = document.body;
     var boton = document.querySelector("button");
